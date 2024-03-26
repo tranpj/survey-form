@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5e/7Picture_of_space_from_the_northern_hemisphere.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1,
+h2,
+p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 80vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgba(27, 27, 50, 80%)
+}
+
+label {
+    display: block;
+    margin: 0 0 10 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10 0 0 0;
+    width: 100%;
+    min-height: 2em
+}
+
+fieldset {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+.inline {
+    width: auto;
+    vertical-align: middle;
+    margin: 0 auto;
+}

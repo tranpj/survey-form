@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">
+        Favourite Space Image Survey Form
+    </h1>
+    <p id="description">
+        Please complete this survey form to tell us what your favourite image of space
+    </p>
+    <form id="survey-form">
+        <fieldset>
+            <h2>Personal Information</h2>
+            <label for="name" id="name-label">
+                Name
+                <input id="name" type="text" required placeholder="Enter your name here." />
+            </label>
+            <label for="email" id="email-label">
+                Email
+                <input id="email" type="email" required placeholder="Enter your email here." />
+            </label>
+            <label for="number" id="number-label">
+                Age (optional)
+                <input id="number" type="number" required min="13" max="120"
+                    placeholder="Enter your age in years here. Optional." />
+            </label>
+        </fieldset>
+        <fieldset>
+            <h2>Image Information</h2>
+            <label>
+                Upload the image
+                <input type="file" />
+            </label>
+            <label>
+                Check all the objects that are in the image
+                <label class="inline">
+                    <input class="inline" type="checkbox" value="star" />
+                    Star(s)
+                </label>
+                <label class="inline">
+                    <input class="inline" type="checkbox" value="planet" />
+                    Planet(s)
+                </label>
+                <label class="inline">
+                    <input class="inline" type="checkbox" value="moon" />
+                    Moon(s)
+                </label>
+                <label class="inline">
+                    <input class="inline" type="checkbox" value="rocket" />
+                    Rocket(s)
+                </label>
+                <label class="inline">
+                    <input class="inline" type="checkbox" value="statellite" />
+                    Statellite(s)
+                </label>
+                <label class="inline">
+                    <input class="inline" type="checkbox" value="earth" />
+                    Earth
+                </label>
+            </label>
+            <label for="description">
+                Describe why you like the image
+                <textarea id="description" name="description" placeholder="This is my favourite space image because..."
+                    rows="3" cols="30">
+          </textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <h2>Image License Information</h2>
+            <label>
+                <select id="dropdown">
+                    <option value="">(Select the license type associated with the image)</option>
+                    <option value="1">Rights Managed (RM) License</option>
+                    <option value="2">Editorial Use License</option>
+                    <option value="3">Royalty Free License (RF)</option>
+                    <option value="4">Creative Commons License</option>
+                    <option value="5">Public Domain</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <h2>Share personal information</h2>
+            <p>
+                Do you want to submit this anonymously
+            </p>
+            <label class="inline">
+                <input type="radio" checked class="inline" name="yes-no" value="yes" />
+                Yes
+            </label>
+            <label class="inline">
+                <input type="radio" class="inline" name="yes-no" value="no" />
+                No
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="submit" />
+    </form>
+</body>
+
+</html>
